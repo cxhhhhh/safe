@@ -1,0 +1,21 @@
+#pragma once
+
+int my_strlen(const char* arr);//计算字符串长度，不需要改变字符串的值，故用const修饰，提高函数安全性
+
+int ltest(char *arr);//检测字符串是否全为数字或字母，是则返回1，反之则返回0
+
+int stest(char *arr);//检测字符串中是否存在一个数字，是则返回1，反之则返回0
+
+int atest(char *arr);//检测字符串中是否存在一个字母，是则返回1，反之则返回0
+
+int dtest(char *arr);//检测字符串中是否存在大写字母，是则返回1，反之则返回0
+//实验一
+int isUsernameOK(char *name);//判断 name 字符串是否符合要求：name 只允许数字或字母，不小于 8 个字符，不超过 16 个字符，且要求以字母开头
+
+int isPasswordOK(char *pwd);//判断 pwd 字符串是否符合要求：允许数字或字母，不小于 8 个字符，不超过 16个字符，
+							//至少包含一个数字和一个字母，且至少一个大写字母。
+
+//实验二
+int gets_safe(char *str, rsize_t n);//从 stdin 读入用户输入，直到用户敲入 Enter 终止
+
+int strcpy_safe(char * dest, rsize_t destsz, const char * src);//复制源字符串 src 到目的缓冲区 dest
